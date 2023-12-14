@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 
 const EmailJsPractic = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
-    e.target.reset(alert("successfull"));
+    alert("successfull");
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -17,6 +17,7 @@ const EmailJsPractic = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -44,7 +45,7 @@ const EmailJsPractic = () => {
               {" "}
               Passward <span>-</span>
             </label>
-            <input type="password" name="username" />
+            <input type="password" name="user_password" />
           </div>
           <div className=" d_flex item_center gap_15 mt_24">
             <label className=" d_flex">
