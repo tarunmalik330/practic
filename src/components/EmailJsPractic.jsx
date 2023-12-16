@@ -34,6 +34,18 @@ const EmailJsPractic = () => {
             </label>
             <input className=" w_100" type="text" name="user_name" />
           </div>
+          <div className=" d_flex item_center  gap_15 mt_24">
+            <label className=" d_flex text_nowrap text_black text_16">
+              Last Name <span>-</span>
+            </label>
+            <input className=" w_100" type="text" name="user_lastname" />
+          </div>
+          <div className=" d_flex item_center gap_15 mt_24">
+            <label className=" d_flex text_nowrap text_black text_16">
+              Mobile<span>-</span>
+            </label>
+            <input className=" w_100" type="number" name="user_number" />
+          </div>
           <div className=" d_flex item_center gap_15 mt_24">
             <label className=" d_flex">
               Email <span>-</span>
