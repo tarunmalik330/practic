@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cherry+Bomb+One&family=Cherry+Cream+Soda&family=Chewy&display=swap");
+
+.ff_cherryBomb {
+  font-family: "Cherry Bomb One", cursive;
+}
+
+.ff_CherryCream {
+  font-family: "Cherry Cream Soda", cursive;
+}
+
+.headingSame {
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  color: white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end 1;
+}
+
+.heroHeading {
+  animation-delay: 4000ms !important;
+}
+
+.heroHeading2 {
+  animation-delay: 0 !important;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 .d_flex {
   display: flex;
 }
@@ -67,4 +105,31 @@
 
 .text_nowrap {
   text-wrap: nowrap;
+}
+
+.mw_428 {
+  max-width: 428px;
+}
+
+.fs_72 {
+  font-size: 72px;
+}
+
+/* div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+} */
+
+.p5Canvas {
+  position: absolute !important;
+  width: 100% !important;
+  top: 0 !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
